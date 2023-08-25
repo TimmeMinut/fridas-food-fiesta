@@ -28,24 +28,46 @@ document.addEventListener("DOMContentLoaded", async () => {
     apiSection.appendChild(resultFeed);
 
     // Sökning
+    // Input
     input.addEventListener("keypress", async (event) => {
         if (event.key === "Enter") {
-            let results = await fetchRecipes(input.value);
-            createArticles(results, resultFeed);
+            try {
+                const results = await fetchRecipes(input.value);
+                createArticles(results, resultFeed);
+            } catch (error) {
+                console.error('An error occurred during search:', error);
+            }
         }
     });
+
+    // Button
     button.addEventListener("click", async () => {
-        let results = await fetchRecipes(input.value);
-        createArticles(results, resultFeed);
+        try {
+            const results = await fetchRecipes(input.value);
+            createArticles(results, resultFeed);
+        } catch (error) {
+            console.error('An error occurred during search:', error);
+        }
     });
 
     // Se detaljer för ett recept
     resultFeed.addEventListener("click", async (event) => {
+        event.stopPropagation();
         const recipe = event.target.closest("article");
-        const id = recipe.querySelector("#id");
         if (recipe) {
-            let details = await fetchRecipeDetails(id.textContent)
-            displayRecipe(details, resultFeed)
+            const id = recipe.querySelector("#id");
+            if (id) {
+                try {
+                    const details = await fetchRecipeDetails(id.textContent)
+                    if (details) {
+                        displayRecipe(details, resultFeed)
+                    } else {
+                        console.error('Could not fetch recipe details.');
+                    }
+                } catch (error) {
+                    console.error('An error occurred while fetching recipe details:', error);
+                }
+            }
         }
     });
 
