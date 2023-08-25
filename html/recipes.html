@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Recipes - Frida's Food Fiesta</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1, maximum-scale=2">
+    <link rel="icon" href="../images/frida.png" type="image/png">
+
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/api.css" rel="stylesheet">
+    <link href="../css/mediaQueries.css" rel="stylesheet">
+
+    <script src="../js/index.js" defer></script>
+    <script type="module" src="../js/foodWidget.js"></script>
+    <script type="module" src="../js/fetchApi.js"></script>
+</head>
+
+<body>
+    <header id="title">
+        <a href="../index.html">
+            <h1>Frida's Food Fiesta</h1>
+        </a>
+    </header>
+
+    <nav>
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li class="active"><a href="recipes.html">Recipes</a></li>
+            <li><a href="food-fiesta.html">Food Fiesta</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="about-me.html">About Me</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="recipes">
+
+            <article id="recipe-post-1">
+                <h3>Woked chicken wings</h3>
+                <time>2023-07-29</time>
+                <picture>
+                    <source media="(max-width: 768px)" srcset="../images/recipe1-small.jpg">
+                    <img src="../images/recipe1.jpg" alt="Woked chicken wings with spring onion">
+                </picture>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ingredient</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Chicken wings</td>
+                            <td>0.5 kg</td>
+                        </tr>
+                        <tr>
+                            <td>Spring onion</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem</td>
+                            <td>2 tbsp</td>
+                        </tr>
+                        <tr>
+                            <td>Ipsum</td>
+                            <td>1 tsp</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                    been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                    also the
+                    leap into electronic typesetting.
+                </p>
+            </article>
+
+            <article id="recipe-post-2">
+                <h3>Noodles with braised pork ribs</h3>
+                <time>2023-07-25</time>
+                <picture>
+                    <source media="(max-width: 768px)" srcset="../images/recipe2-small.jpg">
+                    <img src="../images/recipe2.jpg" alt="braised pork ribs and egg">
+                </picture>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ingredient</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pork ribs</td>
+                            <td>0.6 kg</td>
+                        </tr>
+                        <tr>
+                            <td>Noodles</td>
+                            <td>2 cups</td>
+                        </tr>
+                        <tr>
+                            <td>Egg</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem</td>
+                            <td>1 tsp</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                    been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                    also the
+                    leap into electronic typesetting.
+                </p>
+            </article>
+
+            <article id="recipe-post-3">
+                <h3>Boiled ribs white carrot</h3>
+                <time>2023-07-19</time>
+                <picture>
+                    <source media="(max-width: 768px)" srcset="../images/recipe3-small.jpg">
+                    <img src="../images/recipe3.jpg" alt="Boiled ribs with white carrot">
+                </picture>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ingredient</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pork ribs</td>
+                            <td>0.5 kg</td>
+                        </tr>
+                        <tr>
+                            <td>White carrot</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Ginger</td>
+                            <td>2 tbsp</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem</td>
+                            <td>1 tsp</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                    been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                    also the
+                    leap into electronic typesetting.
+                </p>
+            </article>
+
+            <article id="recipe-post-4">
+                <h3>Chicken veggi wok</h3>
+                <time>2023-07-05</time>
+                <picture>
+                    <source media="(max-width: 768px)" srcset="../images/recipe4-small.jpg">
+                    <img src="../images/recipe4.jpg" alt="woked chicken and vegetables">
+                </picture>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ingredient</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Chicken</td>
+                            <td>0.4 kg</td>
+                        </tr>
+                        <tr>
+                            <td>Vegetables</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem</td>
+                            <td>2 tbsp</td>
+                        </tr>
+                        <tr>
+                            <td>Ipsum</td>
+                            <td>1 tsp</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                    been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                    also the
+                    leap into electronic typesetting.
+                </p>
+            </article>
+
+        </section>
+
+
+        <section id="api">
+
+        </section>
+
+    </main>
+
+    <aside>
+        <button class="bookmark-button" onclick="toggleForm()"></button>
+        <form>
+            <h3>Sign up for our newsletter!</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button class="dontSubmit">Subscribe</button>
+        </form>
+    </aside>
+
+    <footer>
+        <ul>
+            <li>
+                <p>Photos from <a href="https://www.instagram.com/diary_of_food_we_eat/">Diary of food we eat</a></p>
+                <p>Ai generated images from <a href="https://https://hotpot.ai/art-generator/">Hotpot.ai</a></p>
+                <p>Recipe API from <a href="https://spoonacular.com/food-api">spoonacular.com</a></p>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

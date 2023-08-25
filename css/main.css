@@ -1,0 +1,421 @@
+@font-face {
+  font-family: "Food Chicken";
+  src: url("fonts/Food Chicken.otf");
+}
+
+/* General */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 3%;
+  font: 500 1.1rem/1.5 Candara, Calibri, sans-serif;
+  color: #2e0014;
+  background-color: #eee;
+}
+
+header {
+  padding: 1%;
+}
+
+header#title {
+  text-align: center;
+  padding: 3%;
+  margin-top: 5%;
+  margin-bottom: 8%;
+}
+
+#title a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Food Chicken", Helvetica, sans-serif;
+  font-size: 5rem;
+  color: #2E0014;
+  text-shadow:
+    #B5DEAD 0px 0px 5px,
+    #B5DEAD 0px 0px 10px,
+    #B5DEAD 0px 0px 15px,
+    #B5DEAD 0px 0px 20px,
+    #B5DEAD 0px 0px 30px,
+    #B5DEAD 0px 0px 40px,
+    #B5DEAD 0px 0px 50px,
+    #B5DEAD 0px 0px 75px;
+}
+
+h2 {
+  font-family: "Food Chicken", Helvetica, sans-serif;
+  font-size: 2.4rem;
+
+  color: #2E0014;
+  text-shadow:
+    #eee 0px 0px 5px,
+    #eee 0px 0px 10px,
+    #eee 0px 0px 15px,
+    #eee 0px 0px 20px;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2E0014;
+  text-shadow:
+    #b5dead 0px 0px 5px,
+    #b5dead 0px 0px 10px,
+    #b5dead 0px 0px 15px,
+    #b5dead 0px 0px 20px,
+    #b5dead 0px 0px 30px,
+    #b5dead 0px 0px 40px,
+    #b5dead 0px 0px 50px;
+}
+
+img {
+  width: 100%;
+  border: 0.1rem solid #2e0014;
+}
+
+a {
+  color: darkblue;
+}
+
+/* Drop shadow */
+nav,
+.preview,
+article,
+aside,
+table,
+img,
+#api,
+footer {
+  box-shadow: 0 0 10px #2e0014;
+}
+
+/* Input background */
+input {
+  background-color: #eeffc6;
+}
+
+
+/* Hover / tab-focus */
+:focus,
+a:hover,
+button:hover,
+button:focus {
+  outline: none;
+  border: 0.1rem solid #2e0014;
+  box-shadow: 0 0 10px #fff;
+  animation: pulsate 2.5s infinite;
+}
+
+@keyframes pulsate {
+
+  0%,
+  100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+
+  50% {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 1);
+  }
+}
+
+
+
+/* Nav / Hamburger menu*/
+nav {
+  font-family: "Food Chicken", Helvetica, sans-serif;
+  font-size: 2.8rem;
+  border: 0.2rem solid #2e0014;
+  background-color: #8ACFCD;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 8% 0;
+  padding: 5%;
+  width: 15%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+nav li {
+  background-color: #B0CA87;
+  border: 0.1rem solid #2e0014;
+  text-align: center;
+  width: 80%;
+  padding: 5%;
+  margin: 5% 0;
+}
+
+nav li.active {
+  background-color: #B5DEAD;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2E0014;
+  text-shadow:
+    #eee 0px 0px 5px,
+    #eee 0px 0px 10px,
+    #eee 0px 0px 15px,
+    #eee 0px 0px 20px;
+}
+
+
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+}
+
+.bar {
+  width: 2.3rem;
+  height: 0.3rem;
+  background-color: #fff;
+  margin: 0.2rem 0;
+  border: 0.1rem solid #2e0014;
+}
+
+@media all and (max-width: 1023px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 2% 0;
+  }
+
+  nav.active {
+    width: 90%;
+    padding: 4%;
+    align-items: start;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+
+
+/* Posts */
+article {
+  margin: 5% 0;
+  padding: 2% 5%;
+  border: 0.1rem solid #2e0014;
+  background-color: #B5DEAD;
+  color: #2e0014;
+}
+
+article img {
+  width: 100%;
+  margin: 2% 0;
+}
+
+time {
+  display: block;
+  margin-bottom: 2%;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#recipes article,
+#food-fiesta article,
+#reviews article {
+  border: 0.2rem solid #2e0014;
+  margin: 10% 0;
+}
+
+
+/* Table */
+table {
+  float: left;
+  border-collapse: collapse;
+  border: 0.1rem solid #2e0014;
+  background-color: #f2f2f2;
+  margin-right: 3%;
+  margin-bottom: 1%;
+}
+
+td:nth-child(even) {
+  text-align: right;
+}
+
+th {
+  background-color: lightgray;
+  font-weight: bold;
+}
+
+th,
+td {
+  padding: 1rem;
+}
+
+tr {
+  border-bottom: 0.1rem solid #E6E5E5;
+}
+
+tr:last-child {
+  border-bottom-color: #2e0014;
+}
+
+/* Kanske klumpig lösning för att ändra utseendet */
+@media all and (min-width: 320px) and (max-width: 374px) {
+  table+p {
+    clear: both;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  table+p {
+    clear: both;
+  }
+
+}
+
+
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.preview {
+  display: flex;
+  flex-direction: column;
+  margin: 10% 0;
+  padding: 3%;
+  background-color: #B0CA87;
+  border: 0.2rem solid #2e0014;
+}
+
+.preview #food-post-2,
+.preview #food-post-3,
+.preview #food-post-4,
+.preview #recipe-post-2,
+.preview #recipe-post-3,
+.preview #recipe-post-4,
+.preview #review-post-2,
+.preview #review-post-3,
+.preview #review-post-4 {
+  display: none;
+}
+
+
+
+/* Recipes, Food-fiesta, Reviews */
+#recipes,
+#food-fiesta,
+#reviews {
+  display: flex;
+  flex-direction: column;
+}
+
+#recipes #recipe-post-3,
+#recipes #recipe-post-4 {
+  display: block;
+}
+
+
+
+/* about me */
+#about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-me img {
+  width: 90%;
+  border: 0.2rem solid #2e0014;
+  margin: 3% 5%;
+}
+
+#about-me h2 {
+  font-size: 3.6rem;
+  margin: 2% 0;
+}
+
+#about-me p {
+  padding: 5%;
+  margin: 5% 0;
+  border: 0.2rem solid #2e0014;
+  background-color: #B5DEAD;
+}
+
+
+
+
+
+/* Aside / Newsletter */
+aside {
+  padding: 1%;
+  margin-top: 10%;
+  background-color: #B0CA87;
+  border: 0.2rem solid #2e0014;
+}
+
+.bookmark-button {
+  display: none;
+}
+
+form {
+  padding: 1%;
+}
+
+form h3 {
+  text-align: center;
+  margin: 2% 0;
+}
+
+label {
+  float: left;
+  text-align: right;
+  width: 25%;
+  margin-left: 5%;
+  margin-right: 2%;
+}
+
+aside input {
+  width: 55%;
+}
+
+button.dontSubmit {
+  display: block;
+  margin: 2% auto;
+  background-color: #809848;
+  font-size: 1.1rem;
+}
+
+
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  padding: 1%;
+  border: 0.2rem solid #2e0014;
+  background-color: #809848;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+}

@@ -1,0 +1,65 @@
+/* API - Recipe Search */
+#api {
+    text-align: center;
+    padding: 2%;
+    margin: 10% auto;
+    background-color: #b0ca87;
+    border: 0.2rem solid #2e0014;
+}
+
+#api #id {
+    display: none;
+}
+
+#api h3 {
+    text-align: center;
+    margin-bottom: 3%;
+    display: block;
+}
+
+#api input {
+    width: 50%;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+
+#api button {
+    font-size: 1.1rem;
+    background-color: #809848;
+    display: inline-block;
+}
+
+#resultFeed {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+#resultFeed article {
+    width: 90%;
+    margin: 3% 1%;
+    padding: 2%;
+    background-color: #B5DEAD;
+    border: 0.2rem solid #2e0014;
+}
+
+
+#resultFeed article#displayed {
+    padding: 3%;
+}
+
+#servings {
+    font-weight: bold;
+}
+
+#servings,
+#ingredients {
+    text-align: left;
+}
+
+
+#instructions {
+    margin-bottom: 2%;
+    text-align: center;
+}
