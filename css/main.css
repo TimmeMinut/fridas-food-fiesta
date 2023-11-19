@@ -110,7 +110,7 @@ button:focus {
 }
 */
 
-@keyframes pulsate {
+/*@keyframes pulsate {
 
   0%,
   100% {
@@ -120,7 +120,7 @@ button:focus {
   50% {
     box-shadow: 0 0 15px rgba(255, 255, 255, 1);
   }
-}
+}*/
 
 
 
