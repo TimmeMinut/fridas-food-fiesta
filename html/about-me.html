@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About me - Frida's Food Fiesta</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1, maximum-scale=2">
+    <link rel="icon" href="../images/frida.png" type="image/png">
+
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/mediaQueries.css" rel="stylesheet">
+  
+    <script src="../js/index.js" defer></script>
+  </head>
+
+<body>
+    <header id="title">
+        <a href="../index.html">
+            <h1>Frida's Food Fiesta</h1>
+        </a>
+    </header>
+
+    <nav>
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="food-fiesta.html">Food Fiesta</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li class="active"><a href="about-me.html">About Me</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about-me">
+            <picture>
+                <source media="(max-width: 768px)" srcset="../images/frida.png">
+                <img src="../images/frida-large.png" alt="A profile picture of the author, Frida">
+            </picture>
+            <h2>Frida Fridasson</h2>
+            <p>
+                Descripton: <br>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                of type
+                and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                also the
+                leap into electronic typesetting.
+            </p>
+            <p>
+                Contact information: <br>
+                E-mail: FridaFridasson@gmail.com <br> 
+                Instagram: <a href="https://www.instagram.com/diary_of_food_we_eat/">@FridaFood</a> 
+            </p>
+        </section>
+    </main>
+
+    <aside>
+        <button class="bookmark-button" onclick="toggleForm()"></button>
+        <form>
+            <h3>Sign up for our newsletter!</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button class="dontSubmit">Subscribe</button>
+        </form>
+    </aside>
+
+    <footer>
+        <ul>
+            <li>
+                <p>Photos from <a href="https://www.instagram.com/diary_of_food_we_eat/">Diary of food we eat</a></p>
+                <p>Ai generated images from <a href="https://https://hotpot.ai/art-generator/">Hotpot.ai</a></p>
+                <p>Recipe API from <a href="https://spoonacular.com/food-api">spoonacular.com</a></p>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
