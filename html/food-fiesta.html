@@ -28,10 +28,10 @@
             <div class="bar"></div>
         </div>
         <ul class="nav-links">
-            <li><a href="recipes.html">Recipes</a></li>
-            <li class="active"><a href="food-fiesta.html">Food Fiesta</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-            <li><a href="about-me.html">About Me</a></li>
+            <li class="parent"><a href="recipes.html" class="child">Recipes</a></li>
+            <li class="active parent"><a href="food-fiesta.html" class="child">Food Fiesta</a></li>
+            <li class="parent"><a href="reviews.html" class="child">Reviews</a></li>
+            <li class="parent"><a href="about-me.html" class="child">About Me</a></li>
         </ul>
     </nav>
 
@@ -138,15 +138,15 @@
         </section>
     </main>
 
-    <aside>
-        <button class="bookmark-button" onclick="toggleForm()"></button>
+    <aside class="parent">
+        <button class="bookmark-button child" onclick="toggleForm()"></button>
         <form>
             <h3>Sign up for our newsletter!</h3>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            <button class="dontSubmit">Subscribe</button>
+            <button class="dontSubmit parent"><p class="child">Subscribe</p></button>
         </form>
     </aside>
 

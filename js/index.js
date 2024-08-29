@@ -15,7 +15,16 @@ function toggleForm() {
   newsletterForm.classList.toggle("show");
 }
 
+// Hover effect
+document.querySelectorAll('.child').forEach(child => {
+  child.addEventListener('mouseover', () => {
+    child.parentElement.classList.add('hovered');
+  });
 
+  child.addEventListener('mouseout', () => {
+    child.parentElement.classList.remove('hovered');
+  });
+});
 
 
 
